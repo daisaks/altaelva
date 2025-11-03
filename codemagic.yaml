@@ -8,6 +8,7 @@ workflows:
         APP_IDENTIFIER: "no.daisaks.altaelva"
         APP_SCHEME: "Runner"
         BUILD_MODE: "release"
+              working_directory: Altaelva_App_Source_AppleReady
     scripts:
       - name: Get packages
         script: |
