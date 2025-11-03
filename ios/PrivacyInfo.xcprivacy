@@ -1,0 +1,10 @@
+{
+  "privacyManifestVersion": "1.0",
+  "dataCategories": [],
+  "tracking": {
+    "trackingEnabled": false
+  },
+  "privacyPolicyText": "Altaelva samler ingen personopplysninger. Appen viser kun offentlige data fra NVE, MET Norway og Kartverket under NLOD 2.0. Ingen tredjeparts-sporing benyttes.",
+  "purposeStrings": {},
+  "thirdPartyDataSharing": false
+}

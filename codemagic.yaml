@@ -1,0 +1,23 @@
+
+workflows:
+  ios-release:
+    name: Build iOS AppStore
+    environment:
+      flutter: stable
+      vars:
+        APP_IDENTIFIER: "no.daisaks.altaelva"
+        APP_SCHEME: "Runner"
+        BUILD_MODE: "release"
+    scripts:
+      - name: Get packages
+        script: |
+          flutter pub get
+      - name: iOS build
+        script: |
+          flutter build ipa --release --export-options-plist ios/ExportOptions.plist
+    artifacts:
+      - build/ipa/*.ipa
+    publishing:
+      app_store_connect:
+        credential: APP_STORE_CONNECT_API
+        ipa_path: build/ipa/*.ipa
